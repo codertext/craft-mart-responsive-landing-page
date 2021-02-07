@@ -70,8 +70,6 @@ header a {
 }
 
 .h_one {
-    /* padding-top: 70px;
-    padding-bottom: 70px; */
     margin-top: 70px;
 }
 
@@ -194,8 +192,6 @@ li {
 .category_card {
     display: flex;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 70px;
     margin-bottom: 20px;
 }
@@ -208,25 +204,23 @@ li {
 .card {
     display: inline-flex;
     width: 30%;
-    height: 200px;
+    height: 180px;
     border-radius: 10px;
     background-color: rgb(92, 205, 158);
-    /* margin: auto; */
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
 }
 
-.card h2,
-p {
+.card h2 {
     color: white;
     font-size: 30px;
     padding-left: 5px;
 }
 
 .card img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 
 .shop_header {
@@ -243,7 +237,7 @@ p {
 
 .shop {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
@@ -256,8 +250,6 @@ p {
     justify-content: space-evenly;
     padding: 10px;
     border-radius: 10px;
-    /* margin-right: auto;
-    margin-left: auto; */
 }
 
 .product:hover {
@@ -295,23 +287,16 @@ p {
 }
 
 @media (max-width:500px) {
-    .container {
-        margin: 0;
-    }
     .intro {
         display: flex;
         flex-direction: column-reverse;
     }
     .half_width {
-        width: 100%;
+        width: 90%;
     }
     .intro h1 {
         font-size: 30px;
-        /* text-align: center; */
     }
-    /* .intro p {
-        text-align: center;
-    } */
     .intro img {
         width: 300px;
         height: 300px;
@@ -320,7 +305,7 @@ p {
     }
     .intro button {
         padding: 8px 16px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .category_card {
         flex-direction: column;

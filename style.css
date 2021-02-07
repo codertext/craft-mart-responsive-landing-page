@@ -316,8 +316,8 @@ p {
         align-items: center;
     }
     .intro button {
-        padding: 5px 10px;
-        font-size: 16px;
+        padding: 8px 16px;
+        font-size: 18px;
     }
     .category_card {
         flex-direction: column;

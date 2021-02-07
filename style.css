@@ -292,7 +292,7 @@ li {
         flex-direction: column-reverse;
     }
     .half_width {
-        width: 90%;
+        width: 100%;
     }
     .intro h1 {
         font-size: 30px;
@@ -343,10 +343,11 @@ li {
     .product p {
         margin-right: auto;
         padding-left: 10px;
+        font-size: 20px;
     }
     .product a {
         margin-right: auto;
-        font-size: 18px;
+        font-size: 22px;
         padding-left: 10px;
     }
 }

@@ -293,15 +293,14 @@ li {
     }
     .half_width {
         width: 100%;
+        text-align: center;
     }
     .intro h1 {
         font-size: 28px;
     }
-    .intro img {
+    .half_width img {
         width: 300px;
         height: 300px;
-        display: flex;
-        align-items: center;
     }
     .intro button {
         padding: 8px 16px;

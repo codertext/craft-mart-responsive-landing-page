@@ -1,0 +1,6 @@
+@media (max-width: 769px) {
+    .shop-media {
+        display: flex;
+        flex-direction: row
+    }
+}

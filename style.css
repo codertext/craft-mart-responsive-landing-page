@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro-img {
+    width: 400px;
+    height: 400px;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+header a {
+    font-size: 16px;
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    height: 40px;
+    width: 280px;
+    margin-right: auto;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+    /* padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px; */
+    /* margin-right: 40px;
+    margin-left: 40px; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.container p {
+    font-size: 16px;
+    color: rgb(77, 76, 76);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 500px;
+}
+
+.half_width {
+    width: 40%;
+}
+
+.h_one {
+    /* padding-top: 70px;
+    padding-bottom: 70px; */
+    margin-top: 70px;
+}
+
+.title {
+    color: rgb(92, 205, 158);
+    padding: 10px;
+    font-size: 500;
+}
+
+.half_width p {
+    padding: 10px;
+}
+
+.intro button {
+    margin-top: 40px;
+}
+
+.highlight {
+    color: rgb(53, 53, 53);
+    font-weight: 700;
+}
+
+li {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.cart-btn {
+    padding: 9px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(92, 205, 158);
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+.cart-btn:hover {
+    background-color: rgb(58, 170, 123);
+}
+
+.cart-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.cart-btn i {
+    padding-right: 5px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(92, 205, 158);
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+    color: white;
+    margin-left: 10px;
+}
+
+.p-btn {
+    padding: 5px 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: rgb(92, 205, 158);
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+    color: white;
+    margin-bottom: 0;
+}
+
+.btn:hover {
+    background-color: rgb(58, 170, 123);
+}
+
+.p-btn:hover {
+    background-color: rgb(58, 170, 123);
+}
+
+.btn,
+.p-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.p-btn i {
+    padding-right: 5px;
+}
+
+.active {
+    color: rgb(58, 170, 123);
+    font-weight: 600;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0;
+}
+
+.nav_links li a:hover {
+    color: rgb(92, 205, 158);
+}
+
+.category_card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.h_two {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.card {
+    display: inline-flex;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(92, 205, 158);
+    /* margin: auto; */
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card h2,
+p {
+    color: white;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.shop_header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+}
+
+.shop_header h2 {
+    color: rgb(59, 59, 59);
+}
+
+.shop {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid rgb(219, 217, 217);
+    width: 18%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.product:hover {
+    border: 1px solid rgb(92, 205, 158);
+}
+
+.product a:hover {
+    color: rgb(92, 205, 158);
+}
+
+.product button {
+    margin-left: auto;
+}
+
+.product a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(82, 81, 81);
+    margin-bottom: auto;
+    margin-top: 25px;
+}
+
+.product p {
+    margin-bottom: auto;
+}
+
+.product img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.product p {
+    color: rgb(92, 205, 158);
+    font-weight: bold;
+}
+
+@media (max-width:500px) {
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .half_width {
+        width: 90%;
+    }
+    .intro h1 {
+        font-size: 30px;
+        /* text-align: center; */
+    }
+    /* .intro p {
+        text-align: center;
+    } */
+    .intro img {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+    .intro button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .category_card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category_card img {
+        width: 120px;
+        height: 120px;
+    }
+    .category_card h2 {
+        font-size: 24px;
+    }
+    .card {
+        margin-top: 30px;
+        width: 80%;
+        height: 150px;
+    }
+    .shop {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        margin-bottom: 20px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product img {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .product p {
+        margin-right: auto;
+        padding-left: 10px;
+    }
+    .product a {
+        margin-right: auto;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+}
+
+
+/* @media (max-width:768px) {
+    .responsive {
+        flex-direction: column;
+    }
+} */
+
+
+/* @media (max-width:1024px) {
+    .responsive {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1200px) {
+    .responsive {
+        flex-direction: column;
+    }
+} */
+
+
+/* Do the product design */
+
+
+/* Do the product design */
+
+
+/* Do the product design */

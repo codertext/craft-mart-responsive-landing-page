@@ -15,9 +15,6 @@ header {
     margin-right: 100px;
     margin-left: 100px;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     height: 60px;
 }
 
@@ -32,6 +29,10 @@ header a {
     height: 40px;
     width: 280px;
     margin-right: auto;
+}
+
+.nav-icon {
+    display: none;
 }
 
 .container {
@@ -172,6 +173,12 @@ li {
     font-weight: 600;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav_links {
     list-style: none;
 }
@@ -287,6 +294,37 @@ li {
 }
 
 @media (max-width:500px) {
+    .logo {
+        height: 25px;
+        width: 175px;
+        padding-left: 2em;
+    }
+    .nav-icon {
+        display: block;
+        margin-right: 1.5em;
+        color: rgb(92, 205, 158);
+        border-radius: 10px;
+        font-size: 25px;
+    }
+    .nav-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    header {
+        margin: 0;
+        height: 40px;
+        /* position: fixed; */
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-btn {
+        display: none;
+    }
+    .nav_links {
+        display: none;
+    }
     .intro {
         display: flex;
         flex-direction: column-reverse;

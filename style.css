@@ -327,7 +327,7 @@ nav ul li a:hover {
         height: 230px;
     }
     .container h1 {
-        font-size: 25px;
+        font-size: 23px;
     }
     .container p {
         font-size: 14px;
@@ -380,7 +380,7 @@ nav ul li a:hover {
     }
     .product a {
         margin-right: auto;
-        font-size: 22px;
+        font-size: 18px;
         padding-left: 10px;
     }
 }

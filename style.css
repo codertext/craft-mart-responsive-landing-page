@@ -4,46 +4,73 @@
     padding: 0;
 }
 
-.intro-img {
-    width: 400px;
-    height: 400px;
-}
-
-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 100px;
-    margin-left: 100px;
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    box-sizing: border-box;
+    background: white;
+    height: 80px;
     font-family: 'Montserrat', sans-serif;
-    height: 60px;
+    width: 100%;
 }
 
-header a {
-    font-size: 16px;
-    color: rgb(59, 59, 59);
-    text-decoration: none;
+.checkbtn {
+    font-size: 30px;
+    color: rgb(92, 205, 158);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 .logo {
-    cursor: pointer;
-    height: 40px;
-    width: 280px;
-    margin-right: auto;
+    color: rgb(92, 205, 158);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
-.nav-icon {
-    display: none;
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.active,
+nav ul li a:hover {
+    color: rgb(92, 205, 158);
+    transition: .5s;
+}
+
+.intro-img {
+    width: 400px;
+    height: 400px;
 }
 
 .container {
     width: 1200px;
     max-width: 90%;
     margin: 0 auto;
-    /* padding-top: 15px;
-    padding-right: 15px;
-    padding-left: 15px; */
-    /* margin-right: 40px;
-    margin-left: 40px; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -61,6 +88,7 @@ header a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     height: 500px;
@@ -91,12 +119,6 @@ header a {
 .highlight {
     color: rgb(53, 53, 53);
     font-weight: 700;
-}
-
-li {
-    color: rgb(59, 59, 59);
-    text-decoration: none;
-    margin: 0 15px;
 }
 
 .cart-btn {
@@ -166,34 +188,6 @@ li {
 
 .p-btn i {
     padding-right: 5px;
-}
-
-.active {
-    color: rgb(58, 170, 123);
-    font-weight: 600;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav_links {
-    list-style: none;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0;
-}
-
-.nav_links li a:hover {
-    color: rgb(92, 205, 158);
 }
 
 .category_card {
@@ -293,37 +287,46 @@ li {
     font-weight: bold;
 }
 
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(185, 255, 240);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
 @media (max-width:500px) {
     .logo {
-        height: 25px;
-        width: 175px;
-        padding-left: 2em;
-    }
-    .nav-icon {
-        display: block;
-        margin-right: 1.5em;
-        color: rgb(92, 205, 158);
-        border-radius: 10px;
-        font-size: 25px;
-    }
-    .nav-icon:focus {
-        outline: none;
-        box-shadow: none;
-    }
-    header {
-        margin: 0;
-        height: 40px;
-        /* position: fixed; */
-    }
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-    }
-    .cart-btn {
-        display: none;
-    }
-    .nav_links {
-        display: none;
+        font-size: 20px;
     }
     .intro {
         display: flex;
@@ -388,32 +391,3 @@ li {
         padding-left: 10px;
     }
 }
-
-
-/* @media (max-width:768px) {
-    .responsive {
-        flex-direction: column;
-    }
-} */
-
-
-/* @media (max-width:1024px) {
-    .responsive {
-        flex-direction: column;
-    }
-}
-
-@media (max-width:1200px) {
-    .responsive {
-        flex-direction: column;
-    }
-} */
-
-
-/* Do the product design */
-
-
-/* Do the product design */
-
-
-/* Do the product design */

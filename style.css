@@ -68,9 +68,8 @@ nav ul li a:hover {
 }
 
 .container {
-    width: 1200px;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 5%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -243,7 +242,7 @@ nav ul li a:hover {
 }
 
 .product {
-    border: 1px solid rgb(219, 217, 217);
+    border: 1px solid rgb(221, 221, 221);
     width: 18%;
     height: 350px;
     display: flex;
@@ -285,6 +284,45 @@ nav ul li a:hover {
 .product p {
     color: rgb(92, 205, 158);
     font-weight: bold;
+}
+
+.features {
+    margin-top: 30px;
+    display: flex;
+    height: 400px;
+}
+
+.f-icon h2 {
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.f-icon p {
+    font-size: 14px;
+}
+
+.f-width {
+    width: 50%;
+}
+
+.features img {
+    width: 80%;
+    padding: 0 30px;
+}
+
+.f-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.f-icon img {
+    width: 40%;
+}
+
+.item-align {
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1200px) {

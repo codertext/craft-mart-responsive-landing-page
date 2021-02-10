@@ -286,7 +286,42 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.features {
+.bottom-section {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 20px 5%;
+    border: 2px solid slateblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.part-one {
+    width: 50%;
+}
+
+.part-one img {
+    width: 80px;
+}
+
+.each-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part-two {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part-two img {
+    width: 100%;
+}
+
+
+/* .features {
     margin-top: 30px;
     display: flex;
     height: 400px;
@@ -323,7 +358,7 @@ nav ul li a:hover {
 .item-align {
     justify-content: center;
     align-items: center;
-}
+} */
 
 @media (max-width: 1200px) {
     .logo {
